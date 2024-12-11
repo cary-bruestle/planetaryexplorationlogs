@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { DiscoveryService } from '../discovery.service';
 import { FormsModule } from '@angular/forms';
+import { DiscoveryTypeService } from '../discovery-type.service';
 
 @Component({
   selector: 'app-new-discovery',
@@ -14,7 +15,7 @@ export class NewDiscoveryComponent {
   @Input({required: true}) missionId!: number;
   @Output() close = new EventEmitter<void>();
 
-  constructor(private discoveryService: DiscoveryService) { }
+  constructor(private discoveryService: DiscoveryService, private discoveryTypeService: DiscoveryTypeService) { }
 
   newName = '';
   newDiscoveryTypeId = 0;
@@ -25,6 +26,11 @@ export class NewDiscoveryComponent {
     this.close.emit();
   }
 
+  getDiscoveryTypes()
+  {
+    return this.discoveryTypeService.getDiscoveryTypes();
+  }
+  
   onSubmit() {
     this.discoveryService.addDiscovery(
       {

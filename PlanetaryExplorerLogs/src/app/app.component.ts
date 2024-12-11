@@ -39,6 +39,7 @@ export class AppComponent {
 // 12. Unselect mission when selecting different planet
 // 13. Delete mission
 // 14. Delete planet
+// 15. Make Git repository
 
 
 // TBD

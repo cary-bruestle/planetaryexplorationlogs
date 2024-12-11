@@ -9,7 +9,16 @@
 
     <p>
         <label for="discoveryTypeId">Type</label>
-        <input type="text" id="discoveryTypeId" name="discoveryTypeId" [(ngModel)]="newDiscoveryTypeId" />
+        <select [(ngModel)]="newDiscoveryTypeId">
+          @for (discoveryType of getDiscoveryTypes(); track discoveryType.id) {
+            <option
+              [value]="discoveryType.id"
+              [selected]="newDiscoveryTypeId === discoveryType.id"
+            >
+              {{ discoveryType.name }}
+            </option>
+          }
+        </select>
     </p>
 
     <p>
