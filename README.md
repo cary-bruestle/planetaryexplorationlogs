@@ -1,4 +1,4 @@
-# 🚀 StarQuest Technologies: Planetary Exploration Logs API Challenge
+# 🚀 StarQuest Technologies: Planetary Exploration Logs API Challenge : Cary Bruestle
 
 Welcome, **StarQuest Explorer**! 🛸✨
 
