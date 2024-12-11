@@ -1,0 +1,22 @@
+<app-header></app-header>
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <app-planet-list></app-planet-list>
+    </div>
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="middle-side">
+      @if (selectedPlanetId>0) {
+        <app-planet-details></app-planet-details>
+        <app-mission-list [planetId]="selectedPlanetId"></app-mission-list>
+      }
+    </div>    
+    <div class="divider" role="separator" aria-label="Divider"></div>
+    <div class="right-side">
+      @if (selectedMissionId>0) {
+        <app-discovery-list [missionId]="selectedMissionId"></app-discovery-list>
+     }
+   
+    </div>
+  </div>
+</main>

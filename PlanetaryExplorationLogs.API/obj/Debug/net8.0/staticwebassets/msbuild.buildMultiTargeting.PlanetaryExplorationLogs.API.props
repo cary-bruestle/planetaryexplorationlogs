@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PlanetaryExplorationLogs.API.props" />
+</Project>

@@ -1,0 +1,26 @@
+<div class="backdrop" (click)="onCancel()"></div>
+<dialog open>
+  <h2>Add Mission</h2>
+  <form (ngSubmit)="onSubmit()">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" [(ngModel)]="newName" />
+    </p>
+    <p>
+      <label for="date">Date</label>
+      <input type="text" id="date" name="date" [(ngModel)]="newDate" />
+    </p>
+
+      <p>
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" [(ngModel)]="newDescription" />
+      </p>
+  
+
+    <p class="actions">
+      <button type="button" (click)="onCancel()">Cancel</button>
+      <button type="submit">Add</button>
+    </p>
+  </form>
+</dialog>
+

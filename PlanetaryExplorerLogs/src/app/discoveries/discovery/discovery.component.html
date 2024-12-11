@@ -1,0 +1,10 @@
+<div class="discovery-item">
+    <h3>{{ discovery.name }}</h3>
+
+    <label>Type:</label>{{ discovery.discoveryTypeId }}
+    <label>Location:</label>{{ discovery.location }}
+     <br/>
+    {{ discovery.description }}
+  </div>
+    <button (click)="onDeleteDiscovery()">Delete</button>
+  <hr/>

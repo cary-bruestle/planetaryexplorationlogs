@@ -1,0 +1,11 @@
+@if (isAddingMission) {
+    <app-new-mission [planetId]="planetId" (close)="onCloseAddMission()" />
+  }
+  
+  <div title="Missions">
+    <h2>Missions</h2>
+      @for (mission of missions(); track mission.id) {
+        <app-mission [mission]="mission" [selected]="mission.id === this.selectedMissionId"></app-mission>
+      }
+      <button (click)="onStartAddMission()">Add Mission</button>
+  </div>

@@ -1,0 +1,6 @@
+.planet-item button {
+    width:200px;
+}
+.planet-item .active {
+    background-color:darkgrey;
+}

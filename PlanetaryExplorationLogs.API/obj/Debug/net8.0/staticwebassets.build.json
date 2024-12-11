@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "gdJ+KwOEtjuqs7Tw3JwQZkmSOC36zlTIDdw29thF3YA=",
+  "Source": "PlanetaryExplorationLogs.API",
+  "BasePath": "_content/PlanetaryExplorationLogs.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

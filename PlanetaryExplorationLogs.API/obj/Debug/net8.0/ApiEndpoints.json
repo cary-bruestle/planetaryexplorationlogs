@@ -1,0 +1,430 @@
+[
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.DiscoveryController",
+    "Method": "GetDiscovery",
+    "RelativePath": "api/Discovery/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[PlanetaryExplorationLogs.API.Data.Models.Discovery, PlanetaryExplorationLogs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.DiscoveryController",
+    "Method": "UpdateDiscovery",
+    "RelativePath": "api/Discovery/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "discovery",
+        "Type": "PlanetaryExplorationLogs.API.Data.Models.Discovery",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.DiscoveryController",
+    "Method": "DeleteDiscovery",
+    "RelativePath": "api/Discovery/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.DiscoveryController",
+    "Method": "GetDiscoveryTypes",
+    "RelativePath": "api/Discovery/types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Collections.Generic.List\u00601[[PlanetaryExplorationLogs.API.Data.Models.DiscoveryType, PlanetaryExplorationLogs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.MissionController",
+    "Method": "GetMissions",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Collections.Generic.List\u00601[[PlanetaryExplorationLogs.API.Data.Models.Mission, PlanetaryExplorationLogs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.MissionController",
+    "Method": "CreateMission",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mission",
+        "Type": "PlanetaryExplorationLogs.API.Data.DTO.MissionFormDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.MissionController",
+    "Method": "UpdateMission",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mission",
+        "Type": "PlanetaryExplorationLogs.API.Data.Models.Mission",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.MissionController",
+    "Method": "GetMission",
+    "RelativePath": "api/Mission/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[PlanetaryExplorationLogs.API.Data.Models.Mission, PlanetaryExplorationLogs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.MissionController",
+    "Method": "DeleteMission",
+    "RelativePath": "api/Mission/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.MissionController",
+    "Method": "GetDiscoveriesForMission",
+    "RelativePath": "api/Mission/{missionId}/discovery",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "missionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Collections.Generic.List\u00601[[PlanetaryExplorationLogs.API.Data.Models.Discovery, PlanetaryExplorationLogs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.MissionController",
+    "Method": "CreateDiscoveryForMission",
+    "RelativePath": "api/Mission/{missionId}/discovery",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "missionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "discovery",
+        "Type": "PlanetaryExplorationLogs.API.Data.DTO.DiscoveryFormDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.PlanetController",
+    "Method": "CreatePlanet",
+    "RelativePath": "api/Planet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "planet",
+        "Type": "PlanetaryExplorationLogs.API.Data.DTO.PlanetFormDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.PlanetController",
+    "Method": "UpdatePlanet",
+    "RelativePath": "api/Planet",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "planet",
+        "Type": "PlanetaryExplorationLogs.API.Data.Models.Planet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.PlanetController",
+    "Method": "DeletePlanet",
+    "RelativePath": "api/Planet/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.PlanetController",
+    "Method": "GetPlanet",
+    "RelativePath": "api/Planet/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[PlanetaryExplorationLogs.API.Data.Models.Planet, PlanetaryExplorationLogs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.PlanetController",
+    "Method": "GetPlanetsDropdownList",
+    "RelativePath": "api/Planet/dropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Collections.Generic.List\u00601[[PlanetaryExplorationLogs.API.Data.DTO.PlanetDropdownDto, PlanetaryExplorationLogs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PlanetaryExplorationLogs.API.Controllers.PlanetController",
+    "Method": "GetPlanets",
+    "RelativePath": "api/Planet/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "PlanetaryExplorationLogs.API.Utility.Patterns.RequestResult\u00601[[System.Collections.Generic.List\u00601[[PlanetaryExplorationLogs.API.Data.Models.Planet, PlanetaryExplorationLogs.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

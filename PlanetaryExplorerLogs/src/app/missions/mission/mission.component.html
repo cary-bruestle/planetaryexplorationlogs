@@ -1,0 +1,9 @@
+<div class="mission-item" [class.selected]="selected" (click)="onSelectMission()">
+    <h3>{{ mission.name }}</h3>
+    <label>Date:</label>{{ mission.date | date:'shortDate' }}
+    <br/>
+    {{ mission.description }}
+  </div>
+  <button (click)="onDeleteMission()">Delete</button>
+  <hr/>
+  

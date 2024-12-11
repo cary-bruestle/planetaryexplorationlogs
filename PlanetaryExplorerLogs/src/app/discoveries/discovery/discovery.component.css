@@ -1,0 +1,10 @@
+.discovery-item label {
+    display:inline;
+    font-weight:bold;
+    margin-right:20px;
+    width: 100px;
+}
+.discovery-item h3 {
+    color:darkblue;
+    margin-bottom:5px;
+}

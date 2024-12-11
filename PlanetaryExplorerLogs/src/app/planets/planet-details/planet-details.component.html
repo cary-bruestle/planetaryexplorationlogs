@@ -1,0 +1,18 @@
+<div class="planetdetails">
+    <h3>
+        {{ planet?.name }}
+    </h3>
+    <div>
+        <label>Type:</label>{{ planet?.type }}
+    </div>
+    <div>
+        <label>Climate:</label>{{ planet?.climate }}
+    </div>
+    <div>
+        <label>Terrain:</label>{{ planet?.terrain }}
+    </div>
+    <div>
+        <label>Population:</label>{{ planet?.population }}
+    </div>
+    <button (click)="onDeletePlanet()">Delete</button>
+</div>

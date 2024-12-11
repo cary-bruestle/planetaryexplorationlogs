@@ -1,0 +1,12 @@
+@if (isAddingPlanet) {
+  <app-new-planet (close)="onCloseAddPlanet()" />
+}
+
+<div title="Planets">
+  <h2>Planets</h2>
+    @for (planet of planets(); track planet.id) {
+      <app-planet [planet]="planet" 
+                [selected]="planet.id === this.selectedPlanetId"></app-planet>
+    }
+    <button (click)="onStartAddPlanet()">Add Planet</button>
+</div>

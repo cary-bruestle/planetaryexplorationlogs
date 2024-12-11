@@ -1,0 +1,11 @@
+@if (isAddingDiscovery) {
+    <app-new-discovery [missionId]="missionId" (close)="onCloseAddDiscovery()" />
+  }
+  
+  <div title="Discoveries">
+    <h2>Discoveries</h2>
+      @for (discovery of discoveries(); track discovery.id) {
+        <app-discovery [discovery]="discovery" ></app-discovery>
+      }
+      <button (click)="onStartAddDiscovery()">Add Discovery</button>
+  </div>

@@ -1,0 +1,33 @@
+<div class="backdrop" (click)="onCancel()"></div>
+<dialog open>
+  <h2>Add Discovery</h2>
+  <form (ngSubmit)="onSubmit()">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" [(ngModel)]="newName" />
+    </p>
+
+    <p>
+        <label for="discoveryTypeId">Type</label>
+        <input type="text" id="discoveryTypeId" name="discoveryTypeId" [(ngModel)]="newDiscoveryTypeId" />
+    </p>
+
+    <p>
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" [(ngModel)]="newLocation" />
+    </p>
+
+      <p>
+        <label for="description">Description</label>
+        <input type="text" id="description" name="description" [(ngModel)]="newDescription" />
+      </p>
+  
+
+    <p class="actions">
+      <button type="button" (click)="onCancel()">Cancel</button>
+      <button type="submit">Add</button>
+    </p>
+  </form>
+</dialog>
+
+
